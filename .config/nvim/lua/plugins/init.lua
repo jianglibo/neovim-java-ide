@@ -1,4 +1,15 @@
 return {
+  { 'github/copilot.vim' },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
+    "williamboman/mason.nvim",
+    config = function() require('config/mason') end,
+  },
   'aklt/plantuml-syntax',
   'bronson/vim-visual-star-search',
   {

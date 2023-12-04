@@ -122,3 +122,18 @@ require("which-key").register({
     name = "debug",
   },
 }, { prefix = "<leader>" })
+
+
+vim.opt.guicursor = 'n-v-c-sm:hor20,i-ci-ve:ver25-blinkwait300-blinkon200-blinkoff150,r-cr-o:hor20'
+vim.keymap.set('n', '<leader>ft',  "<cmd>Neotree toggle<cr>", {})
+vim.keymap.set('n', '<C-h>',  "<C-w>h", {})
+vim.keymap.set('n', '<C-l>',  "<C-w>l", {})
+vim.keymap.set('n', '<C-j>',  "<C-w>j", {})
+vim.keymap.set('n', '<C-k>',  "<C-w>k", {})
+-- global clipboard
+vim.keymap.set({'n', 'x'}, 'gy', '"+y')
+vim.keymap.set({'n', 'x'}, 'gp', '"+p')
+
+-- theme
+vim.cmd 'colorscheme tokyonight'
+

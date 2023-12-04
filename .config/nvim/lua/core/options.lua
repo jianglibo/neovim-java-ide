@@ -7,6 +7,7 @@ local g = vim.g
 local opt = vim.opt
 local opt_global = vim.opt_global
 
+g.mapleader = ' '
 
 -- disable language provider support (lua and vimscript plugins only)
 g.loaded_perl_provider = 0
