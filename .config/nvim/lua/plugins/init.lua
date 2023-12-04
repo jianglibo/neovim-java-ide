@@ -10,11 +10,19 @@ return {
     "williamboman/mason.nvim",
     config = function() require('config/mason') end,
   },
+  {
+    'williamboman/mason-lspconfig.nvim',
+    config = function() require('config/mason-lspconfig') end,
+  },
+  {
+    'neovim/nvim-lspconfig',
+    config = function() require('config/nvim-lspconfig') end,
+  },
   'aklt/plantuml-syntax',
   'bronson/vim-visual-star-search',
   {
     'chentoast/marks.nvim',
-    config = function ()
+    config = function()
       require("marks").setup()
     end
   },
@@ -55,8 +63,8 @@ return {
   },
   {
     'goolord/alpha-nvim',
-    config = function ()
-        require('alpha').setup(require'alpha.themes.startify'.config)
+    config = function()
+      require('alpha').setup(require 'alpha.themes.startify'.config)
     end
   },
   {
@@ -120,7 +128,7 @@ return {
       augroup('pencil', { clear = true })
       autocmd('FileType', {
         group = 'pencil',
-        pattern = { "markdown" ,"text" },
+        pattern = { "markdown", "text" },
         callback = function()
           vim.cmd("call pencil#init({'wrap': 'hard'})")
           vim.cmd("call litecorrect#init()")
