@@ -24,7 +24,7 @@ return {
     'williamboman/mason-lspconfig.nvim',
     config = function() require('config/mason-lspconfig') end,
   },
-    'neovim/nvim-lspconfig',
+  'neovim/nvim-lspconfig',
   'aklt/plantuml-syntax',
   'bronson/vim-visual-star-search',
   {
@@ -38,7 +38,6 @@ return {
   'ludovicchabant/vim-gutentags',
   'leafOfTree/vim-svelte-plugin',
   'mfussenegger/nvim-jdtls',
-  'neovim/nvim-lspconfig',
   'nvim-lua/plenary.nvim',
   'tpope/vim-commentary',
   'tpope/vim-fugitive',
